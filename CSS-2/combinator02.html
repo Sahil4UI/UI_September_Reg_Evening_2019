@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* immediate child */
+    #parent > h1{
+        color:red;
+    }
+    /* immediate sibling */
+    #parent + h1{
+color:blueviolet;
+    }
+/* all sibling */
+    #parent ~ h1{
+color:blueviolet;
+    }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <h1>This is inside parent</h1>
+        <h1>This is inside parent</h1>
+        <h1>This is inside parent</h1>
+        <h1>This is inside parent</h1>
+        <h1>This is inside parent</h1>
+        <div class="child">
+            <h1>this is inside child</h1>
+            <h1>this is inside child</h1>
+            <h1>this is inside child</h1>
+            <h1>this is inside child</h1>
+            <h1>this is inside child</h1>
+        </div>
+    </div>
+<hr>
+    <h1>SIBLING</h1>
+</body>
+</html>
